@@ -1,0 +1,6 @@
+<!--通过routerLink来导航-->
+<a [routerLink]="['/']">主页面</a>
+<a [routerLink]="['/product',1]">商品详情</a>
+<!--通过Router对象来导航，这个要在app.component.ts做如下改动-->
+<input type="button" value="商品详情" (click)="toProductDetails()">
+<router-outlet></router-outlet>
